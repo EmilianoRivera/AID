@@ -1,26 +1,26 @@
 # Directorio de Expedientes NNA (Niñas, Niños y Adolescentes)
 > **Desarrollador:** Rivera Segura Jose Emiliano  
 > **Institución:** Instituto Politécnico Nacional - ESCOM  
-> **Materia:** Estructuras de Datos  
+> **Materia:** Análisis y Diseño de Sistemas 
 > **Grupo:** 4BV1
 
 ## 📌 Descripción del Proyecto
-Este programa es un CRUD (Create, Read, Update, Delete) diseñado para gestionar expedientes de menores en el marco de la **Ley General de los Derechos de Niñas, Niños y Adolescentes**. Utiliza una estructura de **Pila (Stack)** implementada mediante **Listas Enlazadas** en lenguaje C.
+Este primer programa está enfocada a agregar, actualizar, eliminar o buscar expedientes de niñas, niños y adolescentes, por lo que es un una primera idea de diseñado para la gestión de expedientes de menores. Para el manejo de la información se utiliza una estructura de **Pilas o Stack** implementada usando **Listas Enlazadas** en C.
 
 ## 🛠️ Funcionalidades
-* **Agregar Expediente:** Captura datos de identificación (CURP, Nombre, Edad) y del reporte inicial.
-* **Modificar:** Permite la actualización selectiva de Domicilio, Edad y Descripción Física.
-* **Buscar:** Localización inmediata de expedientes mediante la CURP.
-* **Listar:** Visualización de todos los registros almacenados en la memoria dinámica.
-* **Eliminar:** Borrado seguro de nodos y liberación de memoria física.
+* **Agregar Expediente:** Se capturan los datos de identificación del menor como: CURP, Nombre, Edad e información para la elaboración del reporte.
+* **Modificar:** Permite la actualización de Domicilio, Edad y Descripción Física.
+* **Buscar:** Funcionalidad para extraer toda la información del expediente que se quiera usando el CURP.
+* **Listar:** Se visualizan todos los datos de los expedientes.
+* **Eliminar:** Se borra el expediente requerido, siguiento también las reglas de la estructura de **Pila**.
 
 ## 📂 Estructura del Código
-El proyecto está modularizado para separar la lógica de los datos:
-* `main.c`: Manejo del menú e interfaz de usuario.
-* `plantillas.h`: Definición de estructuras (`DatosNNA`, `DatosReporte`) y prototipos.
-* `implementacion.c`: Lógica de punteros y gestión de la lista enlazada.
-
-## 🚀 Instrucciones de Compilación
-Para compilar el proyecto correctamente, utiliza el siguiente comando en tu terminal:
+El programa consta de una plantilla de estructuras que representan al NNA, posteriormente el flujo que esta en la función main y finalmente las funciones:
+* `main.c`: Código principal del programa.
+  
+## 🚀 Para Compilar
+Para compilar el proyecto correctamente, se puede correr desde el editor de texto **VS Code ** o usar el siguiente comando:
 ```bash
-gcc main.c implementacion.c -o programa_nna
+gcc main.c implementacion.c -o main.c
+
+
